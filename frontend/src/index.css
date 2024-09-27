@@ -1,0 +1,47 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  grid-template-rows: repeat(10, 50px);
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.grid-cell {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #f9f9f9;  
+}
+
+.grid-cell:hover {
+  background-color: #e0e0e0;
+}
+
+/* h1 {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+} */
+.grid-container {
+  display: flex;
+  align-items: center; 
+  flex-direction: column; 
+  height: 100vh; 
+}
+.grid-and-users {
+  display: flex;
+  justify-content: space-between;
+}
+
+.grid {
+  width: 70%;
+}
+
+.users-online {
+  border: 1px solid black;
+}
