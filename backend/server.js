@@ -8,10 +8,18 @@ import connectDB from './config/db.js';
 const port = process.env.PORT || 5000;
 import userRoutes from './routes/userRoutes.js';
 import cookieParser from 'cookie-parser';
+import cors from "cors"; 
+
 
 connectDB();
 
 const app = express();
+
+app.use(cors({
+  origin: ["http://localhost:3000","https://celebrate-spaces.vercel.app","https://celebrate-spaces-kqbj.vercel.app"], 
+  credentials: true,  
+}));
+
 const httpServer = createServer(app);  
 const io = new Server(httpServer, {
   cors: {
@@ -19,7 +27,6 @@ const io = new Server(httpServer, {
   },
 });
 
-// Attach io to app
 app.set('io', io);
 
 app.use(express.json());

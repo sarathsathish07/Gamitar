@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { Row, Col } from "react-bootstrap";
 
-const socket = io('http://localhost:5000');  
+const socket = io('https://gamitar.onrender.com');  
 
 const HomeScreen = () => {
   const { data: gridData, isLoading, isError } = useFetchGridQuery();

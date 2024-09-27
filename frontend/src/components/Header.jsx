@@ -6,9 +6,8 @@ import { useLogoutMutation } from '../slices/usersApiSlice';
 import { logout } from '../slices/authSlice';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import { io } from 'socket.io-client'; // Import Socket.IO
 
-let socket;  // Reuse socket from login
+let socket;  
 
 const Header = () => {
   const { userInfo } = useSelector((state) => state.auth);
@@ -22,9 +21,8 @@ const Header = () => {
       await logoutApiCall().unwrap();
       dispatch(logout());
 
-      // Disconnect from Socket.IO when logging out
       if (socket) {
-        socket.emit('userLoggedOut', { userId: userInfo._id });  // Notify the server
+        socket.emit('userLoggedOut', { userId: userInfo._id });  
         socket.disconnect();
       }
 

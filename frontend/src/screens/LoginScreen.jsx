@@ -34,7 +34,7 @@ const LoginScreen = () => {
       const res = await login({ email, password }).unwrap();
       dispatch(setCredentials({ ...res }));
 
-      socket = io('http://localhost:5000');
+      socket = io('https://gamitar.onrender.com');
       socket.emit('userLoggedIn', { userId: res._id });  
 
       navigate('/home');
