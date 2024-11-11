@@ -9,8 +9,9 @@ const App = () => {
   const location = useLocation();
   const isSignInPage = location.pathname === "/login";
   const isSignUpPage = location.pathname === "/register";
+  const isPage = location.pathname === "/";
 
-  if (isSignInPage || isSignUpPage) {
+  if (isSignInPage || isSignUpPage || isPage) {
     return (
       <>
         <ToastContainer />
