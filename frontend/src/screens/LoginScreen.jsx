@@ -8,7 +8,6 @@ import { setCredentials } from "../slices/authSlice";
 import { toast } from "react-toastify";
 import Loader from "../components/Loader";
 import { io } from "socket.io-client";
-import "../styles/LoginScreen.css";  // Import the styles
 
 let socket;
 
