@@ -48,27 +48,17 @@ h4 {
 
 /* LoginScreen.css */
 
-body {
-  background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+.login-screen-container {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  margin: 0;
-  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
 }
 
-h1 {
-  color: #fff;
-  font-size: 2.5rem;
-  text-align: center;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.FormContainer {
+.login-form-container {
   background: #ffffff;
-  padding: 2rem 2.5rem;
+  padding: 2.5rem;
   border-radius: 12px;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
   max-width: 400px;
@@ -76,21 +66,24 @@ h1 {
   text-align: center;
 }
 
-.FormContainer form {
-  width: 100%;
+.login-header {
+  color: #4e54c8;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.FormContainer .form-group {
+.login-form-group {
   margin-bottom: 1.5rem;
 }
 
-.FormContainer .form-label {
+.login-form-label {
   font-size: 0.9rem;
   font-weight: 600;
   color: #333;
 }
 
-.FormContainer .form-control {
+.login-form-input {
   font-size: 0.9rem;
   padding: 0.75rem;
   border-radius: 8px;
@@ -98,43 +91,35 @@ h1 {
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-.FormContainer .form-control:focus {
+.login-form-input:focus {
   border-color: #8f94fb;
   box-shadow: 0 0 4px rgba(143, 148, 251, 0.5);
 }
 
-.Button-primary {
+.login-submit-button {
   background: linear-gradient(to right, #8f94fb, #4e54c8);
   border: none;
   font-size: 1rem;
   font-weight: 600;
-  padding: 0.75rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 8px;
   transition: background 0.3s ease;
   color: white;
+  width: 100%;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
-.Button-primary:hover {
+.login-submit-button:hover {
   background: linear-gradient(to right, #4e54c8, #8f94fb);
 }
 
-.Button-primary:disabled {
-  background: #cccccc;
-  cursor: not-allowed;
-}
-
-.py-3 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.link {
+.login-link-text {
   color: #8f94fb;
   text-decoration: none;
   font-weight: 500;
 }
 
-.link:hover {
+.login-link-text:hover {
   color: #4e54c8;
 }
