@@ -44,3 +44,97 @@ h2 {
 h4 {
   color: #198754;
 }
+
+
+/* LoginScreen.css */
+
+body {
+  background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.FormContainer {
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.FormContainer form {
+  width: 100%;
+}
+
+.FormContainer .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.FormContainer .form-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.FormContainer .form-control {
+  font-size: 0.9rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.FormContainer .form-control:focus {
+  border-color: #8f94fb;
+  box-shadow: 0 0 4px rgba(143, 148, 251, 0.5);
+}
+
+.Button-primary {
+  background: linear-gradient(to right, #8f94fb, #4e54c8);
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  color: white;
+  cursor: pointer;
+}
+
+.Button-primary:hover {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+.Button-primary:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.py-3 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.link {
+  color: #8f94fb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: #4e54c8;
+}
