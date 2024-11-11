@@ -53,7 +53,7 @@ h4 {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+  
 }
 
 .login-form-container {
@@ -122,4 +122,8 @@ h4 {
 
 .login-link-text:hover {
   color: #4e54c8;
+}
+
+.main-container{
+  background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
 }
