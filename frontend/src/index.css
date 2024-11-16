@@ -1,0 +1,125 @@
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #dadcdd;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.grid-cell {
+  width: 100%;
+  padding: 20px;
+  background-color: #198754;
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.grid-cell:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.users-online {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-weight: bold;
+  color: #333;
+}
+
+h4 {
+  color: #198754;
+}
+
+
+/* LoginScreen.css */
+
+.login-screen-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #4e54c8, #8f94fb);
+}
+
+.login-form-container {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-header {
+  color: #4e54c8;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.login-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.login-form-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.login-form-input {
+  font-size: 0.9rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.login-form-input:focus {
+  border-color: #8f94fb;
+  box-shadow: 0 0 4px rgba(143, 148, 251, 0.5);
+}
+
+.login-submit-button {
+  background: linear-gradient(to right, #8f94fb, #4e54c8);
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.login-submit-button:hover {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+.login-link-text {
+  color: #8f94fb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link-text:hover {
+  color: #4e54c8;
+}
